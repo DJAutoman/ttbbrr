@@ -1,0 +1,15 @@
+<template>
+   <div class="category page">
+        <h2>分类</h2>
+   </div>
+</template>
+
+<script>
+export default {
+    name:"Category"
+}
+</script>
+
+<style lang="less" scoped>
+
+</style>
