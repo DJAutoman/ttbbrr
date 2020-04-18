@@ -13,12 +13,6 @@
       <div slot="item-text">分类</div>
     </tab-bar-item>
 
-    <tab-bar-item path="/cart" activeColor="deepPink">
-      <img slot="item-icon" src="../../assets/img/tabbar/购物车.png" alt />
-      <img slot="item-icon-active" src="../../assets/img/tabbar/购物车 (1).png" alt />
-      <div slot="item-text">购物车</div>
-    </tab-bar-item>
-
     <tab-bar-item path="/profile" activeColor="orange">
       <img slot="item-icon" src="../../assets/img/tabbar/我的.png" alt />
       <img slot="item-icon-active" src="../../assets/img/tabbar/我的 (1).png" alt />

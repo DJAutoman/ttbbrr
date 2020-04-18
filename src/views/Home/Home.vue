@@ -1,56 +1,22 @@
 <template>
   <div class="home page">
-    <h2>主页</h2>
-    <div class>1</div>
-    <div class>2</div>
-    <div class>3</div>
-    <div class>4</div>
-    <div class>5</div>
-    <div class>6</div>
-    <div class>7</div>
-    <div class>8</div>
-    <div class>9</div>
-    <div class>10</div>
-    <div class>11</div>
-    <div class>12</div>
-    <div class>13</div>
-    <div class>14</div>
-    <div class>15</div>
-    <div class>16</div>
-    <div class>17</div>
-    <div class>18</div>
-    <div class>19</div>
-    <div class>20</div>
-    <div class>21</div>
-    <div class>22</div>
-    <div class>23</div>
-    <div class>24</div>
-    <div class>25</div>
-    <div class>26</div>
-    <div class>27</div>
-    <div class>28</div>
-    <div class>29</div>
-    <div class>30</div>
-    <div class>31</div>
-    <div class>32</div>
-    <div class>33</div>
-    <div class>34</div>
-    <div class>35</div>
-    <div class>36</div>
-    <div class>37</div>
-    <div class>38</div>
-    <div class>39</div>
-    <div class>40</div>
-    <div class>41</div>
-    <div class>42</div>
-    <div class>43</div>
-    <div class>44</div>
-    <div class>45</div>
-    <div class>46</div>
-    <div class>47</div>
-    <div class>48</div>
-    <div class>49</div>
-    <div class>50</div>
+    <div class="homeHeader">
+      <div class="homeHeader_top">
+        <div class="balance">
+          <div class="balance_sur">
+            <span>￥</span>
+            <span class="balance_sur_num">62,485.56</span>
+            <span class="balance_eye">
+              <img src="../../assets/img/home/eye on.png" alt />
+            </span>
+          </div>
+          <div class="balance_bb">总资产(元)</div>
+        </div>
+        <div class="portrait">
+          <img src="../../assets/img/home/Rectangle 5.png" alt />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -61,4 +27,50 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.homeHeader {
+  width: 100%;
+  height: 291px;
+  background: url("../../assets/img/home/Rectangle 1.png");
+  .homeHeader_top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 24px;
+    .balance {
+      margin-top: 64px;
+
+      .balance_sur {
+        font-family: Noto Sans CJK;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        color: #ffffff;
+        margin-bottom: 4px;
+        .balance_sur_num {
+          margin: 0 14px 0 10px;
+        }
+      }
+      .balance_bb {
+        font-family: Noto Sans CJK;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #f5f5f5;
+        opacity: 0.64;
+      }
+    }
+    .portrait {
+      margin-top: 64px;
+      width: 48px;
+      height: 48px;
+      border: 2px solid #ffffff;
+      box-sizing: border-box;
+      border-radius: 16px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
 </style>

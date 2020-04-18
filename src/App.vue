@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header></Header>
+    <!-- <Header></Header> -->
     <keep-alive>
       <router-view></router-view>
     </keep-alive>
@@ -10,12 +10,12 @@
 
 <script>
 import MainTabBar from "./components/tabbar/MainTabBar.vue";
-import Header from "./components/header/Header.vue";
+// import Header from "./components/header/Header.vue";
 export default {
   name: "App",
   components: {
     MainTabBar,
-    Header
+    // Header
   },
   created() {
     if (this.$router.path !== "/home") {

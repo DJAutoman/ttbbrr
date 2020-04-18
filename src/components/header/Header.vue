@@ -21,7 +21,7 @@ export default {
   watch: {
     $route(route) {
       this.title = route.meta.title;
-      let routes = ["Cart", "Home", "Profile"];
+      let routes = ["Category", "Home", "Profile"];
       // 匹配到 routes 裡面的就不顯示返回按鈕
       if (routes.includes(route.name)) {
         this.isshow = false;
@@ -29,18 +29,11 @@ export default {
         this.isshow = true;
       }
       // 是否隐藏头部
-      if (route.name === "Profile") {
+      if (route.name === "Profile" || route.name === "Home" ) {
         this.isfoshow = false;
       } else {
         this.isfoshow = true;
       }
-      // 设置标题
-      // if (route.params.title) {
-      //   this.titles = route.params.title;
-      //   this.issan = false;
-      // } else {
-      //   this.issan = true;
-      // }
     }
   }
 };
